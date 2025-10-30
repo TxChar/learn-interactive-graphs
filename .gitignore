@@ -28,7 +28,6 @@ node_modules/
 
 # Vue specific
 dist/
-.vscode/
 *.local
 components.d.ts
 

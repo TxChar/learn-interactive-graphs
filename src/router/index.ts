@@ -1,27 +1,30 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// 1. Import your page components
 import HomePage from '@/pages/index.vue'
 import FlowPage from '@/pages/flow.vue'
+import CustomFlowPage from '@/pages/custtom.vue'
 
-// 2. Define your routes
 const routes = [
     {
-        path: '/', // The root URL
+        path: '/',
         name: 'Home',
-        component: HomePage, // Shows the Home.vue component
+        component: HomePage,
     },
     {
-        path: '/flow', // The /flow URL
+        path: '/flow',
         name: 'Flow',
-        component: FlowPage, // Shows your Flow/index.vue component
+        component: FlowPage,
+    },
+    {
+        path: '/custom',
+        name: 'Custom',
+        component: CustomFlowPage,
     },
 ]
 
-// 3. Create and export the router
 const router = createRouter({
-    history: createWebHistory(), // Uses normal browser history
-    routes, // Pass in the routes we defined
+    history: createWebHistory(),
+    routes,
 })
 
 export default router
