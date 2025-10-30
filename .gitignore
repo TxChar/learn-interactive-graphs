@@ -1,0 +1,37 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+bun-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Bun
+bun.lockb
+.bun/
+
+# Node modules (common for Bun and Vue)
+node_modules/
+
+# Vue specific
+dist/
+.vscode/
+*.local
+components.d.ts
+
+# OS generated files
+.DS_Store
+Thumbs.db
