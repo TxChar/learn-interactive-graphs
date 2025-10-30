@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import HomePage from '@/pages/index.vue'
 import FlowPage from '@/pages/flow.vue'
-import CustomFlowPage from '@/pages/custtom.vue'
+import CustomFlowPage from '@/pages/custom.vue'
 
 const routes = [
     {

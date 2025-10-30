@@ -54,18 +54,18 @@ const edges = ref<Edge[]>([
 
 <template>
   <div class="h-full w-full">
-    <VueFlow
-      v-model:nodes="nodes"
-      v-model:edges="edges"
-      :fit-view-on-init="true"
-    >
-      <Controls />
-      <MiniMap />
+        <VueFlow
+        v-model:nodes="nodes"
+        v-model:edges="edges"
+        :fit-view-on-init="true"
+        >
+        <Controls />
+        <MiniMap />
 
-      <template #node-custom="props">
-        <CustomNode v-bind="props" />
-      </template>
-      
-    </VueFlow>
+        <template #node-custom="props">
+          <CustomNode v-bind="props" />
+        </template>
+        
+      </VueFlow>
   </div>
 </template>
